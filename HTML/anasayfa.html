@@ -1,0 +1,42 @@
+<head>
+    <title>For my future husband</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: #FF4081;
+      }
+      img {
+        width: 300px;
+        border-radius: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Doğum Günü Kutlu Olsun Sevgilim !</h1>
+    <p>ANAN SENİ BENİM İÇİN DOĞURMUŞ YAVRUM</p>
+    
+    <div id="photo-gallery"></div>
+    
+    <script>
+      var photoGallery = document.getElementById('photo-gallery');
+      
+      // Kedi fotoğraflarının URL'lerini aşağıdaki diziye ekleyin
+      var photoURLs = [
+        'https://i.pinimg.com/originals/19/ae/60/19ae60d624e81bfe550a82bebeb05edf.jpg',
+        'https://pbs.twimg.com/media/EsQKRsAVcAEy37E.jpg',
+        'https://www.pngitem.com/pimgs/m/513-5135175_transparent-heart-emoticon-png-heart-png-download.png'
+        // Diğer fotoğrafları buraya ekleyin...
+        ];
+      
+      // Fotoğraf galerisini oluşturun
+      for (var i = 0; i < photoURLs.length; i++) {
+        var img = document.createElement('img');
+        img.src = photoURLs[i];
+        photoGallery.appendChild(img);
+      }
+    </script>
+  </body>
